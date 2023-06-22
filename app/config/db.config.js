@@ -1,9 +1,10 @@
 module.exports = {
-  HOST: "localhost",
+  HOST: "svc.sel4.cloudtype.app",
   USER: "root",
-  PASSWORD: "123456",
+  PORT: "31270",
+  PASSWORD: "3152",
   DB: "testdb",
-  dialect: "mysql",
+  dialect: "mariadb",
   pool: {
     max: 5,
     min: 0,

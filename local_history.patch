@@ -1,0 +1,23 @@
+Index: server.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/server.js b/server.js
+--- a/server.js	
++++ b/server.js	(date 1687441866405)
+@@ -21,10 +21,10 @@
+ 
+ db.sequelize.sync();
+ // force: true will drop the table if it already exists
+-db.sequelize.sync({force: false}).then(() => {
+-  console.log('Drop and Resync Database with { force: true }');
+-  initial();
+-});
++// db.sequelize.sync({force: false}).then(() => {
++//   console.log('Drop and Resync Database with { force: true }');
++//   initial();
++// });
+ 
+ // simple route
+ app.get("/", (req, res) => {
